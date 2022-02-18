@@ -25,15 +25,15 @@ class Snake:
         self.direction = 'down'
 
     def walk(self):
-        if self.direction == 'left':
-            self.x -= 10
-        if self.direction == 'right':
-            self.x += 10
-        if self.direction == 'up':
-            self.y -= 10
         if self.direction == 'down':
             self.y += 10
 
+        elif self.direction == 'left':
+            self.x -= 10
+        elif self.direction == 'right':
+            self.x += 10
+        elif self.direction == 'up':
+            self.y -= 10
         self.draw()
 
 
