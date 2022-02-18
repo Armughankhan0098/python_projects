@@ -84,10 +84,7 @@ class Game:
         self.apple.draw()
 
     def is_collision(self, x1, y1, x2, y2):
-        if x1 >= x2 and x1 < x2 + SIZE:
-            if y1 >= y2 and y1 < y2 + SIZE:
-                return True
-        return False
+        return x1 >= x2 and x1 < x2 + SIZE and y1 >= y2 and y1 < y2 + SIZE
 
     def display_score(self):
         font = pygame.font.SysFont('arial',30)
